@@ -1,0 +1,13 @@
+*.aux
+build/
+*.fdb_latexmk
+*.fls
+*.log
+*.maf
+*.mtc
+*.mtc0
+*.mtc1
+*.out
+*.pdf
+*.toc
+
