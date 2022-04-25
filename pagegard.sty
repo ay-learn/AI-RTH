@@ -1,0 +1,44 @@
+\ProvidesPackage{pagegard}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer} %pour remove numbered
+\metroset{block=fill}
+
+\newcommand*{\professeur}{Amal KCHIBAL}
+\newcommand*{\theauthor}{Ayoub EL MHAMDI}
+% Title page details: 
+\title{\bigskip LE ROLE DE L'INTELLIGENCE ARTIFICIELLE EN MEDCINE}
+\author{
+    \textbf{\theauthor} \bigskip\and\\
+    Encadré par: \\
+    Pr. \textbf{\professeur}
+    \\
+}
+
+
+\date{\today}
+\institute{
+    \hspace{100mm}
+    \textbf{TRPM}
+    % \begin{tabular}{b{50pt} p{50pt} b{50pt}}
+    %     \end{tabular}
+
+}
+\logo{ \includegraphics{logo.png} }
+
+\newif\ifplacelogo % create a new conditional
+\placelogotrue % set it to true
+\logo{\ifplacelogo\includegraphics[width=0.20\linewidth]{logo.png}\fi} % replace with your own command
+
+\AtBeginSection[]{
+    \placelogofalse
+    \begin{frame}<beamer>{Dans Ce Chapitre}
+        \setbeamertemplate{section in toc}[sections numbered]
+        \textbf{
+            \tableofcontents[currentsection,currentsubsection,
+                hideothersubsections,
+                sectionstyle=show/shaded,
+                ]
+        }
+    \end{frame}
+}
