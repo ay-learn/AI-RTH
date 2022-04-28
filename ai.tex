@@ -1,46 +1,22 @@
 \documentclass{beamer}
-\usepackage{pagegard}% test for table
+\usepackage{pagegard}% 
+\usepackage{ay-command}% 
 \usepackage{xspace}
 
-
-% \renewcommand*{\theauthor}{Ayoub EL MHAMDI}
 \renewcommand*{\professeur}{Amal KCHIBAL}
-\newcommand*{\flag}{-}
-
+\includeonly{Objectif}
 \begin{document}
-
-
-% Title page frame
 \maketitle
-\placelogotrue
-
-\begin{frame}{OBJECTIF}
-    ii
-\end{frame}
-{\placelogofalse
-\begin{frame}{PLAN}
-  \setbeamertemplate{section in toc}[sections numbered]
-    \textbf{
-      \tableofcontents[hideallsubsections]
-    }
-\end{frame}
-}
-% \cite{knuth92,ConcreteMath,Simpson,Er01,greenwade93}
-
-% [allowframebreaks]%
-% \bibliography{demo}
-% \bibliographystyle{abbrv}
-%
-% {\placelogofalse
-% \begin{frame}[standout]
-%     Merci de Votre Aimable Attention
-% \end{frame} 
-% }
 
 
-
-
-\input{Historique.tex}
-\input{Introduction.tex}
+\include{Objectif}
+\include{Plan}
+\include{Historique}
+\include{Introduction}
+\include{Role}
+\include{Probleme}
+\include{Conclusion}
+\include{References}
+\include{Fin}
 
 \end{document}
